@@ -4,27 +4,32 @@
 </section>
 <div class="container">
     <div class="title">
-      <h3>Temperaturomvandlare:</h3>  
+        <h3>Temperaturomvandlare:</h3>
     </div>
-    <div class="inputs">
-        <label for="C">Grader i Celcius (°C)</label>
-        <input type="number" id="C" [(ngModel)]="celcius" (input)="calculateCelciusToFahrenheit()">
+    <div class="inputs-container">
+        <div class="inputs">
+            <label for="C">Grader i Celcius (°C)</label>
+            <input type="number" id="C" [(ngModel)]="celcius" (input)="calculateCelciusToFahrenheit()">
+        </div>
+        <div class="inputs">
+            <label for="F">Grader i Fahrenheit (°F)</label>
+            <input type="number" id="F" [(ngModel)]="fahrenheit" (input)="calculateFahrenheitToCelcius()">
+        </div>
     </div>
-    <div class="inputs">
-        <label for="C">Grader i Fahrenheit (°F)</label>
-        <input type="number" id="C" [(ngModel)]="fahrenheit" (input)="calculateFahrenheitToCelcius()">
-    </div>
+
 </div>
 <div class="container">
     <div class="title">
-      <h3>Distansomvandlare:</h3>  
+        <h3>Distansomvandlare:</h3>
     </div>
-    <div class="inputs">
-        <label for="M">Distans i Meter (M)</label>
-        <input type="number" id="M" [(ngModel)]="meter" (input)="calculateMeterToFoot()">
-    </div>
-    <div class="inputs">
-        <label for="F">Distans i Foot (Ft)</label>
-        <input type="number" id="F" [(ngModel)]="foot" (input)="calculateFootToMeter()">
+    <div class="inputs-container">
+        <div class="inputs">
+            <label for="M">Distans i Meter (M)</label>
+            <input type="number" id="M" [(ngModel)]="meter" (input)="calculateMeterToFoot()">
+        </div>
+        <div class="inputs">
+            <label for="F">Distans i Foot (Ft)</label>
+            <input type="number" id="F" [(ngModel)]="foot" (input)="calculateFootToMeter()">
+        </div>
     </div>
 </div>
